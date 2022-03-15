@@ -27,7 +27,7 @@ public class abc081b {
 			}
 			count++;
 		}
-		System.out.println(count);
+		System.out.println(count-1);
 
 	}
 
