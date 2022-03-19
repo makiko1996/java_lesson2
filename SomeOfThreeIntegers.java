@@ -13,14 +13,11 @@ public class SomeOfThreeIntegers {
 		int count = 0;
 
 		for (int x = 0; x <= k; x++) {
-			System.out.println("x"+x);
 			for (int y = 0; y <= k; y++) {
-				System.out.println("y"+y);
 				int z = s - x - y;
-					if (z >= 0 && z <= k) {
-						count += 1;
-						System.out.println("*"+z);
-					}
+				if (z >= 0 && z <= k) {
+					count += 1;
+				}
 			}
 		}
 
