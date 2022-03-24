@@ -10,9 +10,7 @@ public class abc226b {
 		Set<String> set = new HashSet<String>();
 		
 		for (int i = 0; i < N+1; i++) {
-			System.out.println("------------");
 			set.add(scan.nextLine());
-			System.out.println(i);
 		}
 		
 		System.out.println(set.size() - 1);
