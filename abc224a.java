@@ -10,9 +10,9 @@ public class abc224a {
 		String S = scan.nextLine();
 		
 		if (S.substring(S.length() - 2).equals("er")) {
-			System.out.println("ist");
-		} else if (S.substring(S.length() - 3).equals("ist")) {
 			System.out.println("er");
+		} else if (S.substring(S.length() - 3).equals("ist")) {
+			System.out.println("ist");
 		}
 
 	}
