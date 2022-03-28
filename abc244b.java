@@ -50,7 +50,7 @@ public class abc244b {
 			}
 		}
 		
-		System.out.println("(" + x + "," + y +")");
+		System.out.println(x + " " + y);
 
 	}
 
