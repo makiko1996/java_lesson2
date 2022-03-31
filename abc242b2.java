@@ -10,8 +10,7 @@ public class abc242b2 {
 		String S = scan.next();
 		char[] s = S.toCharArray();
 		Arrays.sort(s);
-		System.out.print(s[1]);
-		
+		System.out.print(s);
 
 	}
 
