@@ -7,10 +7,10 @@ public class abc237a {
 		Scanner scan = new Scanner(System.in);
 		
 		long N = scan.nextLong();
-		double min = Math.pow(2, -31);
+		double min = Math.pow(-2, 31);
 		double max = Math.pow(2, 31);
 		
-		if (N >= min && N <= max) {
+		if (N >= min && N < max) {
 			System.out.println("Yes");
 		} else {
 			System.out.println("No");
