@@ -17,7 +17,7 @@ public class abc238b {
 		}
 
 		for (int j = 1; j <= N.length; j++) {
-			angle += N[j-1];
+			angle += N[j - 1];
 			if (angle >= 360) {
 				angle -= 360;
 				angles[j] = angle;
@@ -35,14 +35,12 @@ public class abc238b {
 				difference = tmp;
 			}
 		}
-		
+
 		if (difference >= 360 - angles[N.length]) {
 			System.out.println(difference);
 		} else {
 			System.out.println(360 - angles[N.length]);
 		}
-
-		
 
 	}
 
