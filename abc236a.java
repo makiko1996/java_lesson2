@@ -11,9 +11,6 @@ public class abc236a {
 		
 		String newS = S.substring(0, a-1) + S.substring(b-1, b) + S.substring(a, b-1) + S.substring(a-1, a) + S.substring(b);
 		
-//		String Sa = S.replaceFirst(S.substring(a-1, a), S.substring(b-1, b));
-//		String Sb = Sa.replaceFirst(S.substring(b-1, b), S.substring(a-1, a));
-		
 		System.out.println(newS);
 	}
 
