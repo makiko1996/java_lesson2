@@ -9,10 +9,12 @@ public class abc236a {
 		int a = scan.nextInt();
 		int b = scan.nextInt();
 		
-		S = S.replace(S.substring(a-1, a), S.substring(b-1, b));
-		S = S.replace(S.substring(b-1, b), S.substring(a-1, a));
+		String newS = S.substring(0, a-1) + S.substring(b-1, b) + S.substring(a, b-1) + S.substring(a-1, a) + S.substring(b);
 		
-		System.out.println(S);
+//		String Sa = S.replaceFirst(S.substring(a-1, a), S.substring(b-1, b));
+//		String Sb = Sa.replaceFirst(S.substring(b-1, b), S.substring(a-1, a));
+		
+		System.out.println(newS);
 	}
 
 }
