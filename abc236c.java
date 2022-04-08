@@ -10,6 +10,7 @@ public class abc236c {
 		
 		String[] S = new String[N];
 		String[] T = new String[M];
+		String[] ans = new String[N];
 		
 		for (int i = 0; i < N; i ++) {
 			S[i] = scan.next();
@@ -18,24 +19,21 @@ public class abc236c {
 		for (int i = 0; i < M; i ++) {
 			T[i] = scan.next();
 		}
-		
-//		始発
-		System.out.println("Yes");
-		for (int i = 1; i < N - 1; i++) {
-			for (int j = 1; j < M - 1; j++) {
-				if (S[i].equals(T[j])) {
-					System.out.println("Yes");
-					break;
-				}
-				
-				if (j == M - 2) {
-					System.out.println("No");
-				}
-				
+
+		int j = 0;
+		for (int i = 0; i < N; i++) {
+			if (S[i].equals(T[j])) {
+				ans[i] = "Yes";
+				j++;
+			} else {
+				ans[i] = "No";
 			}
 		}
-//		終点
-		System.out.println("Yes");
+
+		for (int i = 0; i < N; i++) {
+			System.out.println(ans[i]);
+		}
+		
 		
 	}
 }
