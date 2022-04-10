@@ -23,8 +23,8 @@ public class abc235c {
 
 		int[] ans = new int[Q];
 		int count = 0;
-		
-		//何個めの質問か
+
+		// 何個めの質問か
 		for (int i = 0; i < Q; i++) {
 			count = 0;
 			ans[i] = -1;
@@ -32,10 +32,10 @@ public class abc235c {
 			for (int l = 0; l < N; l++) {
 				if (x[i] == a[l]) {
 					count++;
-						if(k[i] == count) {
-							ans[i] = l + 1;
-							break;
-						}
+					if (k[i] == count) {
+						ans[i] = l + 1;
+						break;
+					}
 
 				}
 
